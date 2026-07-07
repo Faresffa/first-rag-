@@ -11,7 +11,7 @@ class Moderator:
         # On utilise un modèle léger et rapide (safeguard)
         self.model = "llama-3.1-8b-instant" 
         
-        with open("prompt/moderator_prompt.txt", "r", encoding="utf-8") as f:
+        with open("prompts/moderator_prompt.txt", "r", encoding="utf-8") as f:
             self.system_prompt = f.read()
 
     def moderate(self, question):
